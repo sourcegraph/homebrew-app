@@ -9,7 +9,6 @@ class Sourcegraph < Formula
   license "Sourcegraph Enterprise License (portions licensed under Apache 2)"
 
   depends_on "git"
-  depends_on "redis"
   depends_on "sourcegraph/src-cli/src-cli"
 
   on_macos do
