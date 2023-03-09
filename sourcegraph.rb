@@ -5,24 +5,24 @@
 class Sourcegraph < Formula
   desc "Code intelligence and search"
   homepage "https://github.com/sourcegraph/sourcegraph"
-  version "2023.03.23+204957.f499bb"
+  version "2023.03.23+205275.dd37e7"
   license "Sourcegraph Enterprise License (portions licensed under Apache 2)"
 
   depends_on "git"
   depends_on "sourcegraph/src-cli/src-cli"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+204957.f499bb/sourcegraph_2023.03.23+204957.f499bb_darwin_arm64.zip"
-      sha256 "def82a7e8ee542ca650f0689d69b3c5461f8fdcb5480192a57c993d93ddfb9a7"
+    if Hardware::CPU.intel?
+      url "https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+205275.dd37e7/sourcegraph_2023.03.23+205275.dd37e7_darwin_amd64.zip"
+      sha256 "50cada34f68f0ecf615d6a2f54e29b41d55445f8a5343e499827547c670591f0"
 
       def install
         bin.install "sourcegraph"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+204957.f499bb/sourcegraph_2023.03.23+204957.f499bb_darwin_amd64.zip"
-      sha256 "14084d9c98d7ab5296a157052320291ca58005fc8953cd2335270c388ca85b83"
+    if Hardware::CPU.arm?
+      url "https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+205275.dd37e7/sourcegraph_2023.03.23+205275.dd37e7_darwin_arm64.zip"
+      sha256 "f7be32a806a4dd22ba9a3126f696236dd03d9c4d5f8c29ee3796567c84b313c0"
 
       def install
         bin.install "sourcegraph"
@@ -32,8 +32,8 @@ class Sourcegraph < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+204957.f499bb/sourcegraph_2023.03.23+204957.f499bb_linux_amd64.zip"
-      sha256 "a9fca597fc7a706970b5efa2d4a47708a3484bbc00f154f2afdc0aeef86d3f40"
+      url "https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+205275.dd37e7/sourcegraph_2023.03.23+205275.dd37e7_linux_amd64.zip"
+      sha256 "06ced59dc7b0fdb145fa11ea822ef424f67c42e688ba319184dd52c73f888558"
 
       def install
         bin.install "sourcegraph"
