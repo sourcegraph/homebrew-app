@@ -5,7 +5,7 @@
 class Sourcegraph < Formula
   desc "Code intelligence and search"
   homepage "https://github.com/sourcegraph/sourcegraph"
-  version "2023.03.23+205275.dd37e7"
+  version "2023.03.23+205301.ca3646"
   license "Sourcegraph Enterprise License (portions licensed under Apache 2)"
 
   depends_on "git"
@@ -13,16 +13,16 @@ class Sourcegraph < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+205275.dd37e7/sourcegraph_2023.03.23+205275.dd37e7_darwin_amd64.zip"
-      sha256 "50cada34f68f0ecf615d6a2f54e29b41d55445f8a5343e499827547c670591f0"
+      url "https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+205301.ca3646/sourcegraph_2023.03.23+205301.ca3646_darwin_amd64.zip"
+      sha256 "255ef1a08736d3246d12105a64edc4425f7a8aebf64d7b060db5347ebe11757b"
 
       def install
         bin.install "sourcegraph"
       end
     end
     if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+205275.dd37e7/sourcegraph_2023.03.23+205275.dd37e7_darwin_arm64.zip"
-      sha256 "f7be32a806a4dd22ba9a3126f696236dd03d9c4d5f8c29ee3796567c84b313c0"
+      url "https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+205301.ca3646/sourcegraph_2023.03.23+205301.ca3646_darwin_arm64.zip"
+      sha256 "6867783c6ccdc1bdf9e02168ff0ea54566c0cd6cbf163d88735a7a047b01d2f0"
 
       def install
         bin.install "sourcegraph"
@@ -32,8 +32,8 @@ class Sourcegraph < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+205275.dd37e7/sourcegraph_2023.03.23+205275.dd37e7_linux_amd64.zip"
-      sha256 "06ced59dc7b0fdb145fa11ea822ef424f67c42e688ba319184dd52c73f888558"
+      url "https://storage.googleapis.com/sourcegraph-app-releases/2023.03.23+205301.ca3646/sourcegraph_2023.03.23+205301.ca3646_linux_amd64.zip"
+      sha256 "febc731972581fab6eb7bc031cdec0af3909e1c4392c9a2e394b95812112b86e"
 
       def install
         bin.install "sourcegraph"
